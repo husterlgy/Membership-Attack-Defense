@@ -10,7 +10,10 @@ import pandas as pd
 from attack import load_data
 from attack import save_data
 
-
+DATA_PATH = './data/'
+dataset_orignial = load_data(DATA_PATH + 'original_target_data.npz')
+x,y,test_x,test_y = dataset_orignial
+del test_x,test_y
 
 
 
